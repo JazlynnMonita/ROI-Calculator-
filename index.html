@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice ROI Simulator</title>
+</head>
+<body>
+    <h1>Invoice ROI Simulator</h1>
+    <form id="roiForm">
+        <label>Scenario Name: <input type="text" id="scenario_name" required></label><br>
+        <label>Monthly Invoice Volume: <input type="number" id="monthly_invoice_volume" value="2000"></label><br>
+        <label>AP Staff: <input type="number" id="num_ap_staff" value="3"></label><br>
+        <label>Hours per Invoice: <input type="number" step="0.01" id="avg_hours_per_invoice" value="0.17"></label><br>
+        <label>Hourly Wage: <input type="number" id="hourly_wage" value="30"></label><br>
+        <label>Error Rate Manual (%): <input type="number" step="0.01" id="error_rate_manual" value="0.5"></label><br>
+        <label>Error Cost: <input type="number" id="error_cost" value="100"></label><br>
+        <label>Time Horizon (Months): <input type="number" id="time_horizon_months" value="36"></label><br>
+        <label>One-time Implementation Cost: <input type="number" id="one_time_implementation_cost" value="50000"></label><br>
+        <button type="button" id="simulateBtn">Simulate</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
