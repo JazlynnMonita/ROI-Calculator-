@@ -1,0 +1,29 @@
+Calculating ROI manually is time-consuming and error-prone, especially when data comes from multiple sources.This project aims to solve that problem by building a simple, web-based tool that automatically calculates and stores ROI for each invoice, giving users clear and quick insights into their financial performance.
+
+1.Planned Approach & Architecture
+Frontend - HTML, CSS, JavaScript
+Backend - Flask in Python
+The data is stored locally in an SQLite database
+
+2.Flow of the application:
+User → Frontend → Flask API → SQLite DB → Flask Response → UI Update
+
+3.Technologies and Tools:
+Frontend- HTML5, CSS3, JavaScript-For user interface and interactions
+Backend	- Flask (Python)-To handle routes, APIs, and calculations
+Database- SQLite-To store invoice data and ROI results
+Development Tools - VS Code, Git, GitHub-For coding, version control, and collaboration
+
+4.Key Features
+1.Add Invoices Easily
+Users can enter invoice details such as cost and revenue. The app automatically calculates ROI using: ROI = ((Revenue - Cost) / Cost) × 100
+
+2.View and Manage Data
+All invoices are saved in the database and can be viewed or deleted anytime.
+
+3.Instant ROI Insights
+The dashboard shows important metrics like total invoices, average ROI, and top-performing entries.
+
+4.Smooth and Responsive Interface
+The frontend updates dynamically using Fetch API, so there’s no need to reload the page.
+
